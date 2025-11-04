@@ -97,7 +97,7 @@ function displayCourses(list) {
         container.appendChild(card);
     });
 
-    const total = list.reduce((sum, course) => sum + course.credits, 0);
+    const total = list.reduce((sum, c) => sum + c.credits, 0);
     document.getElementById("totalCredits").textContent = total;
 }
 
