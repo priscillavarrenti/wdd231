@@ -101,7 +101,7 @@ function displayCourses(list) {
     document.getElementById("totalCredits").textContent = total;
 }
 
-document.getElementById("All").addEventListener("click", () => displayCourses(courses));
+document.getElementById("all").addEventListener("click", () => displayCourses(courses));
 document.getElementById("cse").addEventListener("click", () => displayCourses(courses.filter(course => course.subject === 'CSE')));
 document.getElementById("wdd").addEventListener("click", () => displayCourses(courses.filter(course => course.subject === 'WDD')));
 
