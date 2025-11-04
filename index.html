@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD231 | Course Home Page</title>
+    <meta name="author" content="Priscilla Varrenti">
+    <meta name="description" content="course home page for WDD 231">
+
+    <!--agregar la font de google-->
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>Priscilla Varrenti | 2025</h1>
-</body>
-</html>
+    <header>
+        <div class="header-container">
+            <img src="" alt="Site Logo" class="logo">
+            <span class="sitename">Priscilla Varrenti</span>
+            <button id="menuButton">☰</button> 
+        </div>
+        <nav id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rem excepturi repellat dolor quaerat nihil quis odit deleniti 
+                dolorum impedit eaque? Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Reiciendis quidem, quam tempore minima aut 
+                perferendis aperiam veritatis ea blanditiis dicta?
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/me2.webp" alt="Student Photo">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="courseCards" class="course-cards"></div>
+
+            <p class="credits">
+                The total creditsfor courses listed above is 
+                <span id="totalCredits">0</span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social">
+            <a href="https://github.com/priscillavarrenti/wdd231" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/priscilla-mariel-v-56923528b" target="_blank">LinkedIn</a>
+        </div>
+
+        <p>&copy; <span id="currentYear"></span> | Priscilla Varrenti | Buenos Aires, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

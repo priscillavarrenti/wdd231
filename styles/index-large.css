@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav a {
+        border: none;
+        padding: 1rem 2rem;
+    }
+
+    .about,
+    .photo {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+    }
+
+    .about {
+        margin-right: 2%;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+}
