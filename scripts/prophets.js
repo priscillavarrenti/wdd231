@@ -1,4 +1,4 @@
-const ulr = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
+const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
 
 const cards = document.querySelector('#cards');
 
@@ -20,7 +20,7 @@ const displayProphets = (prophets) => {
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         birthInfo.textContent = `Born: ${prophet.birthdate} in ${prophet.birthplace}`;
-        deathInfo.textContent = `Died: ${prophet.deathdate ? prophet.deathdate : 'Still living'}`;
+        deathInfo.textContent = `Died: ${prophet.death ? prophet.death : 'Still living'}`;
         orderInfo.textContent = `Order: ${prophet.order} ° President`;
 
         portrait.setAttribute('src', prophet.imageurl);
