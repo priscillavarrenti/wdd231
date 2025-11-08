@@ -1,0 +1,37 @@
+{
+    "familyName": "Varrenti",
+    "moveInDate": "2024-08-15",
+    "numOfMembers": 5,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Miguel Varrenti",
+            "gender": "Male",
+            "birthdate": "1975-11-05"
+        },
+
+        {
+            "name": "Josefa Varrenti",
+            "gender": "Female",
+            "birthdate": "1978-11-05"        
+        },
+
+        {
+            "name": "Tatiana Varrenti",
+            "gender": "Female",
+            "birthdate": "2006-06-03"
+        },
+
+        {
+            "name": "Romania Varrenti",
+            "gender": "Female",
+            "birthdate": "2001-06-03"
+        },
+
+        {
+            "name": "Priscilla Varrenti",
+            "gender": "Female",
+            "birthdate": "2004-08-19"
+        }
+    ]
+}
