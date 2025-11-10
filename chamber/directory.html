@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buenos Aires Chamber of Commerce</title>
     <meta name="author" content="Priscilla Varrenti">
-    <meta name="description" content="Week 2 project - Chamber of Commerce Directory Page">
+    <meta name="description" content="Week 2 project - Buenos Aires Chamber of Commerce Directory Page">
 
     <link rel="shortcut icon" href="favicon-arg.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
 
     <!--Open Graph facebook tags-->
     <meta property="og:title" content="WDD231 | Buenos Aires Chamber of Commerce">
@@ -21,6 +24,8 @@
 <body>
     <header>
         <div class="header-container">
+            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <span class="sitename">Buenos Aires Chamber of Commerce</span>
             <button id="menuButton" aria-label="Menu">☰</button> 
         </div>
         <nav id="navMenu">
@@ -30,7 +35,16 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <h2>Business Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+
+        <section id="members-container" class="grid"></section>
+    </main>
 
     <footer>
         <div class="contact-info">
