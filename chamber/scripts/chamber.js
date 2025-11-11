@@ -48,7 +48,7 @@ function displayMembers(members) {
        phone.innerHTML=`<strong>Phone:</strong> ${member.phone}`;
 
        const website=document.createElement("p");
-       website.innerHTML=`<a href="${member.website}" target=_blank>Visit Website</a>`;
+       website.innerHTML=`<a href="${member.website}" target="_blank">Visit Website</a>`;
 
        card.appendChild (img);
        card.appendChild (name);
