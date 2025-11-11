@@ -29,17 +29,36 @@ function displayMembers(members) {
     members.forEach((member => {
         const card = document.createElement("div");
         card.classList.add("member-card");
-        
-        card.innerHTML= `
-        <img src= "${member.image}" alt="${member.name}">
-        <h3>${member.name}</h3>
-        <p>${member.description}</p>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-        `;
+       const img=document.createElement("img");
+       img.src=member.image;
+       img.alt=member.name;
+       img.width=300;
+       img.height=200;
+
+       const name=document.createElement("h3");
+       name.textContent=member.name;
+
+       const description=document.createElement("p")
+       description.textContent=member.description;
+
+       const address=document.createElement("p");
+       address.innerHTML=`<strong>Address:</strong> ${member.address}`;
+
+       const phone=document.createElement("p");
+       phone.innerHTML=`<strong>Phone:</strong> ${member.phone}`;
+
+       const website=document.createElement("p");
+       website.innerHTML=`<strong>Phone:</strong> ${member.phone}`;
+
+       card.appendChild (img);
+       card.appendChild (name);
+       card.appendChild (description);
+       card.appendChild (address);
+       card.appendChild (phone);
+       card.appendChild (website);
 
         membersContainer.appendChild(card);
+
     }));
 }
 
