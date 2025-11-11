@@ -8,9 +8,9 @@
     <meta name="description" content="Week 2 project - Buenos Aires Chamber of Commerce Directory Page">
 
     <link rel="shortcut icon" href="favicon-arg.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamber.js" defer></script>
 
     <!--Open Graph facebook tags-->
     <meta property="og:title" content="WDD231 | Buenos Aires Chamber of Commerce">
@@ -20,14 +20,16 @@
     <meta property="og:url" content="https://priscillavarrenti.github.io/wdd231/chamber/directory.html">
     <meta property="og:site_name" content="Priscilla Varrenti - WDD231">
 
+    <script src="scripts/chamber.js" defer></script>
+
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <img src="images/logo.svg" alt="Site Logo" class="logo">
-            <span class="sitename">Buenos Aires Chamber of Commerce</span>
-            <button id="menuButton" aria-label="Menu">☰</button> 
-        </div>
+        <img src="images/logo.svg" alt="Site Logo" class="logo">
+        <span class="sitename">Buenos Aires Chamber of Commerce</span>
+
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button> 
+
         <nav id="navMenu">
             <a href="index.html">Home</a>
             <a href="directory.html" class="active">Chamber Project</a>

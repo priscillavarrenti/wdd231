@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #052436;
+    --secondary-color: #ffffff;
+    --accent-color: hsl(55, 100%, 51%);
+    --text-color: #111;
+    --font: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.sitename {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*---Hamburger icon---*/
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+.hamburger::before{
+content: "\2630";
+}
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+
+/*---navigation---*/
+nav{
+    display: none;
+    /*grid-column: 1/4;*/
+    background-color: var(--primary-color);
+    flex-direction: column;
+    align-items: center;
+}
+nav.show{
+    display: flex;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+nav a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+
+/*Small*/
+@media (max-width: 600px) {
+    .header-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav#navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+    }
+    nav#navMenu a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    nav#navMenu.show{
+        display: flex;
+    }
+
+    #menuButton {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 0.5rem;
+    }
+    .view-buttons button {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+    main {
+        padding: 1rem;
+    }
+}
+
+/*Large*/
+@media (min-width: 601px) {
+    header{
+        grid-template-columns: 44px auto auto;
+    }
+    .hamburger{
+        display: none;
+    }
+    nav{
+        display: flex !important;
+        background: none;
+        flex-direction: row;
+        grid-column: 3/4;
+    }
+    nav a{
+        padding: 0 1rem;
+    }
+}
