@@ -86,9 +86,10 @@ nav a:hover{
     gap: 1rem;
     transition: all 0.3s ease;
 }
-#members-container.list{
+/*#members-container.list{
     display: block;
-}
+}*/
+section{unicode-bidi: isolate;}
 .member-card{
     background-color: white;
     border-radius: 10px;
