@@ -6,7 +6,6 @@
     --font: "Montserrat", sans-serif;
 }
 
-/*---general---*/
 body {
     font-family: var(--font);
     background-color: var(--secondary-color);
@@ -29,7 +28,6 @@ main {
     padding: 2rem;
 }
 
-/*---logo y site name*/
 .header-container {
     display: flex;
     align-items: center;
@@ -48,7 +46,6 @@ main {
     text-align: center;
 }
 
-/*---Hamburger icon---*/
 .hamburger{
     background: none;
     border: none;
@@ -63,7 +60,6 @@ main {
     content: "\00D7";
 }
 
-/*---navigation---*/
 nav{
     display: none;
     width: 100%;
@@ -84,7 +80,6 @@ nav a:hover{
     color: var(--primary-color);
 }
 
-/*--members-container--*/
 #members-container.grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
