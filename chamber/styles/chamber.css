@@ -15,34 +15,26 @@ body {
     padding: 0;
 }
 
-/*---header---*/
 header{
-    display: grid;
-    grid-template-columns: 44px auto 44px;
+    display: flex;
     align-items: center;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    position: relative;
-}
-
-header, footer {
-    text-align: center;
-    padding: 1rem;
+    justify-content: space-between;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
 }
 
-/*---main*/
 main {
     padding: 2rem;
 }
-/*---logo y site name*/
 
+/*---logo y site name*/
 .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 .logo {
@@ -65,18 +57,16 @@ main {
     color: white;
 }
 .hamburger::before{
-content: "\2630";
+    content: "\2630";
 }
 .hamburger.show::before{
     content: "\00D7";
 }
 
-
 /*---navigation---*/
 nav{
     display: none;
-    grid-column: 1/4;
-    background-color: var(--primary-color);
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
@@ -94,6 +84,34 @@ nav a:hover{
     color: var(--primary-color);
 }
 
+/*--members-container--*/
+#members-container.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+#members-container.list{
+    display: block;
+}
+.member-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.member-card:hover{
+    transform: translateY(-5px);
+}
+footer{
+    background-color: #f4f4f4;
+    color: #111;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
 
 /*Small*/
 @media (max-width: 600px) {
@@ -101,30 +119,11 @@ nav a:hover{
         flex-direction: column;
         text-align: center;
     }
-    nav#navMenu {
-        display: none;
-        flex-direction: column;
-        background-color: var(--primary-color);
-        padding: 1rem 0;
-    }
-    nav#navMenu a {
-        display: block;
-        padding: 0.5rem 0;
-    }
 
     nav#navMenu.show{
         display: flex;
     }
 
-    #menuButton {
-        display: block;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 0.5rem;
-    }
     .view-buttons button {
         display: block;
         width: 80%;
@@ -148,10 +147,6 @@ nav a:hover{
         flex-direction: column;
     }
     .header-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
         width: 100%;
     }
     .sitename{
@@ -173,6 +168,5 @@ nav a:hover{
     }
     .hamburger{
         display: none;
-
     }
 }

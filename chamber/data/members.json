@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Cafe Palermo",
+            "address":"Av. Santa Fe 3456, Buenos Aires",
+            "phone": "(011) 4321-2345",
+            "website": "https://cafepalermo.com",
+            "image": "https://placehold.co/300x200?text=Cafe+Palermo",
+            "membershipLevel": 3,
+            "description": "Artesanal coffe shop offering locally roasted beans and homemade pastries."
+        },
+        {
+            "name":"TechBA Solutions",
+            "address": "Córdoba 897, Buenos Aires",
+            "phone": "(011) 4455-8765",
+            "website": "https://techba.com",
+            "image": "https://placehold.co/300x200?text=TechBA+Solutions",
+            "membershipLevel": 2,
+            "description": "Sofware consulting company specializing in web development and IT services."
+        },
+        {
+            "name": "EcoPrint",
+            "address": "Florida 221, Buenos Aires",
+            "phone": "(011) 5589-2345",
+            "website": "https://ecoprint.com.ar",
+            "image": "https://placehold.co/300x200?text=EcoPrint",
+            "membershipLevel": 1,
+            "description":"Sustaintable printing service that uses eco-frendly materials and processes."
+        },
+        {
+            "name": "Hotel Obelisco",
+            "address": "Av. 9 de Julio 1234, Buenos Aires",
+            "phone": "(011) 6543-9876",
+            "website": "https://hotelobelisco.com",
+            "image": "https://placehold.co/300x200?text=Hotel+Obelisco",
+            "membershipLevel": 3,
+            "description": "Boutique hotel located in the heart of Buenos Aires, offeringpremium service."
+        },
+        {
+            "name": "BA Fitness Center",
+            "address": "San Martin 888, Buenos Aires",
+            "phone": "(011) 7654-3210",
+            "website": "https://bafitness.com.ar",
+            "image": "https://placehold.co/300x200?text=BA+Fitness+Center",
+            "membershipLevel": 2,
+            "description": "Modern gym with personalized training and wellness programs."
+        },
+        {
+            "name": "Flor de Ceibo",
+            "address": "Av. Belgrano 900, Buenos Aires",
+            "phone": "(011) 3333-9876",
+            "website": "https://flordeceibo.com",
+            "image": "https://placehold.co/300x200?text=Flor+e+Ceibo",
+            "membershipLevel": 1,
+            "description": "Store offering handmade Argentine crafts and traditional gifts."
+        },
+        {
+            "name": "Turismo BA",
+            "address": "Av. Corrientes 1200, Buenos Aires",
+            "phone": "(011) 2233-4444",
+            "website": "https://turismoba.com.ar",
+            "image":"https://placehold.co/300x200?text=Turismo+BA",
+            "membershipLevel": 3,
+            "description": "Local travel agency providing cultural tours and travel packages in Argentina."
+        }
+    ]
+}
