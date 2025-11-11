@@ -1,9 +1,9 @@
-const navButton = document.querySelector("#nav-button");
-const navMenu = document.querySelector("#navMenu");
+const navButton = document.getElementById("nav-button");
+const navMenu = document.getElementById("navMenu");
 
 navButton.addEventListener("click", () => {
     navButton.classList.toggle("show");
-    navButton.classList.toggle("show");
+    navMenu.classList.toggle("show");
 });
 
 document.querySelector("#currentYear").textContent= new Date ().getFullYear();
