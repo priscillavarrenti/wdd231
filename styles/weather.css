@@ -22,9 +22,9 @@ header{
 }
 
 main {
-    border:  1px solid #87ceeb;
-    background-color: #0078d7/*#0078d4*/;
-    color: white;
+    border:  1px solid #505f65;
+    background-color: #e0e0e0/*#0078d4*/;
+    color: #555;
     border-radius: 10px;
     text-align: center;
     padding: 2rem;
@@ -35,7 +35,7 @@ main {
 
 h1{
     font-size: 2.5rem;
-    color: #9a1c1c;
+    color: #555;
     margin: 0.5rem;
     text-align: center;
 }
@@ -51,12 +51,12 @@ figure {
 figcaption{
     text-transform: capitalize;
     font-size: 1rem;
-    color: #fff;
+    color: #555;
     margin-top: 0.5rem;
 }
 #current-temp {
     font-size: 2rem;
-    color: #ffeb3b;
+    color: #c9a800;
     margin-top: 0.5rem;
     font-weight: bold;
 }
