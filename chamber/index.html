@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce</title>
+    <meta name="author" content="Priscilla Varrenti">
+    <meta name="description" content="This is my atempt to attract people to use my page to read and learn more about Argentina">
+
+    <link rel="shortcut icon" href="favicon-arg.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Facebook tags -->
+    <meta property="og:title" content="WDD231 | Buenos Aires Chamber of Commerce Directory">
+    <meta property="og:description" content="I created this website to make it easier for people to discover and connect with Buenos Aires and its bussiness. by Priscilla Varrenti for WWD231">
+    <meta property="og:image" content="https://priscillavarrenti.github.io/wdd231/chamber/images/og-chamber.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priscillavarrenti.github.io/wdd231/chamber/directory.html">
+    <meta property="og:site_name" content="Priscilla Varrenti - WDD231">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <span class="sitename">Buenos Aires Chamber of Commerce</span>
+        </div>
+
+        <button id="nav-button" class="hamburger" aria-label="Open Navigation"></button>
+
+        <nav id="navMenu" class="nav-box">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="images/Arg-hero.jpg" alt="Buenos Aires City" class="hero-img">
+            <h1>Welcome to Buenos Aires Chamber of Commerce</h1>
+        </section>
+
+        <section id="cta-section">
+            <h2>Join the Buenos Aires Chamber of Commerce</h2>
+            <p>Boost your bussiness by joining our community</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </section>
+
+        <section id="events-sections">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>December 10: Chamber Luncheon</li>
+                <li>January 15: Networking Meetup</li>
+                <li>Febrary 20: Business Workshop</li>
+            </ul>
+        </section>
+
+        <section id="weather-section">
+            <h2>Current Weather in Buenos Aires</h2>
+            <figure>
+                <img id="weather-icon" src="" alt="Weather Icon" />
+                <figcaption></figcaption>
+            </figure>
+            <p id="current-temp"></p>
+        </section>
+
+        <section id="business-spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlights-container"></div>
+        </section>
+
+        <script src="scripts/chamber.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Chamber Directory</p>
+            <p>Av. Corrientes</p>
+            <p>Email: info@buenosaireschamber.com</p>
+            <p>Phone: (011) 2278-4768</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/priscillavarrenti/wdd231" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/priscilla-mariel-v-56923528b" target="_blank">LinkedIn</a> |
+            <a href="https://maps.app.goo.gl/odinGz9ScZP2aJLEA" target="_blank">Google Maps</a>
+        </div>
+
+        <p>&copy; <span id="currentYear"></span> | Priscilla Varrenti | Buenos Aires, Argentina</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
