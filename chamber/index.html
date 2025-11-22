@@ -27,14 +27,15 @@
     <meta property="og:site_name" content="Priscilla Varrenti - WDD231">
 
 </head>
+
 <body>
     <header>
         <div class="header-container">
-            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <img src="images/logo.svg" alt="Chamber Logo" class="logo">
             <span class="sitename">Buenos Aires Chamber of Commerce</span>
         </div>
 
-        <button id="nav-button" class="hamburger" aria-label="Open Navigation"></button>
+        <button id="nav-button" class="hamburger" aria-label="Open Navigation Menu"></button>
 
         <nav id="navMenu" class="nav-box">
             <a href="index.html" class="active">Home</a>
@@ -44,36 +45,35 @@
     </header>
 
     <main>
-        <section id="hero">
-            <img src="images/heroimg.jpg" alt="Buenos Aires City" class="hero-img">
-            <h1>Welcome to Buenos Aires Chamber of Commerce</h1>
+        <section id="hero" class="hero">
+            <img src="images/heroimg.jpg" alt="Buenos Aires city" class="hero-img">
+            <div class="hero-content">
+                <h1>Welcome to Buenos Aires Chamber of Commerce</h1>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </div>
         </section>
-
-        <section id="cta-section">
-            <h2>Join the Buenos Aires Chamber of Commerce</h2>
-            <p>Boost your bussiness by joining our community</p>
-            <a href="join.html" class="cta-button">Join Now</a>
-        </section>
-
-        <section id="events-sections">
+        <section id="events-section">
             <h2>Upcoming Events</h2>
             <ul>
                 <li>December 10: Chamber Luncheon</li>
                 <li>January 15: Networking Meetup</li>
-                <li>Febrary 20: Business Workshop</li>
+                <li>February 20: Business Workshop</li>
             </ul>
         </section>
-
         <section id="weather-section">
             <h2>Current Weather in Buenos Aires</h2>
+
             <figure>
-                <img id="weather-icon" alt="Weather Icon" />
+                <img id="weather-icon" src="" alt="Weather Icon">
                 <figcaption></figcaption>
             </figure>
-            <p id="current-temp"></p>
-        </section>
 
-        <section id="business-spotlights">
+            <p id="current-temp"></p>
+
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
+        </section>
+        <section id="bussiness-spotlights">
             <h2>Business Spotlights</h2>
             <div id="spotlights-container"></div>
         </section>
